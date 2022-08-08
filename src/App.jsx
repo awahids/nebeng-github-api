@@ -1,12 +1,12 @@
 import './App.css';
 
-import Home from './page/home/Home';
+import RoutesLink from "./routes/routes";
 
 const App = () => {
   return (
-    <>
-      <Home />
-    </>
+    <div className="App">
+        <RoutesLink />
+    </div>
   );
 }
 

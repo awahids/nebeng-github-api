@@ -9,7 +9,7 @@ export default function Search() {
   const [resData, setResData] = useState([]);
   const [search, setSearch] = useState("");
 
-  const tokenGithub = "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";
+  // const tokenGithub = process.env.REACT_APP_GITHUB_TOKEN;
   const notifyError = (message) =>
     toast(<p style={{ fontSize: 16 }}>{message}</p>, {
       position: "top-center",
@@ -32,7 +32,8 @@ export default function Search() {
       axios
         .get(`https://api.github.com/search/users?q=${search}&per_page=5`, {
           headers: {
-            Authorization: `token ${tokenGithub}`,
+            // Authorization: `token ${tokenGithub}`,
+            'User-Agent': 'request',
           },
         })
         .then((response) => {
