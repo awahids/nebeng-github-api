@@ -1,0 +1,70 @@
+#repo-list {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 30px;
+}
+
+#repo-list td,
+#repo-list th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.td-detail {
+    cursor: pointer;
+}
+#repo-list tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#repo-list tr:hover {
+    background-color: #ddd;
+}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: rgba(147, 197, 253, 0.5);
+    color: rgb(0, 0, 0);
+}
+td {
+    text-align: left;
+}
+
+.table-container {
+    width: 90vw;
+    margin: 0 auto;
+}
+
+.pagination-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* .modal-repo{
+    min-width: 50vw;
+    min-height: 50vh;
+    
+  } */
+
+.detail-repo {
+    display: flex;
+    gap: 40px;
+    margin: 20px 0;
+    align-items: center;
+    justify-content: center;
+}
+.content-name {
+    min-width: 170px;
+}
+.content-value {
+    min-width: 200px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    max-width: 200px;
+}
