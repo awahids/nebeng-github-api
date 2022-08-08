@@ -1,11 +1,11 @@
 import './App.css';
 
-import RoutesLink from "./routes/routes";
+import RoutesLink from "./routes/route";
 
 const App = () => {
   return (
     <div className="App">
-        <RoutesLink />
+      <RoutesLink />
     </div>
   );
 }
